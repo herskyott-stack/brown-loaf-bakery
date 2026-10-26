@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brown Loaf Bakery — 268 Elgin St, Ottawa · Holiday Pre-Orders</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap');
+*{margin:0;box-sizing:border-box}body{font-family:'DM Sans',sans-serif;background:#fff8ee;color:#4a2c14}
+.wrap{max-width:920px;margin:auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:2px dashed #c98d4b}
+nav b{font-family:'DM Serif Display';font-size:26px;font-weight:400}
+nav a{color:#4a2c14;text-decoration:none;font-weight:700}
+.hero{text-align:center;padding:54px 0 30px}
+.hero .tag{display:inline-block;background:#4a2c14;color:#fff8ee;padding:7px 16px;border-radius:999px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.hero h1{font-family:'DM Serif Display';font-weight:400;font-size:clamp(48px,9vw,86px);line-height:1;margin:20px 0 14px}
+.hero p{font-size:19px;line-height:1.6;max-width:56ch;margin:auto;color:#6d4a2a}
+.stars{margin-top:18px;font-weight:700}
+.list{background:#fff;border:2px solid #4a2c14;border-radius:18px;padding:8px 30px;margin:34px 0}
+.item{display:flex;justify-content:space-between;gap:18px;padding:20px 0;border-bottom:1px dashed #d8b98a}
+.item:last-child{border-bottom:0}
+.item h3{font-family:'DM Serif Display';font-weight:400;font-size:24px}
+.item p{color:#6d4a2a;line-height:1.55;max-width:52ch}
+.item span{font-weight:700;white-space:nowrap;color:#a35c14}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:34px}
+.box{border-radius:18px;padding:28px}
+.box.dark{background:#4a2c14;color:#ffeeda}.box.light{background:#f3dfbe}
+.box h3{font-family:'DM Serif Display';font-weight:400;font-size:26px;margin-bottom:10px}
+.box p{line-height:1.6}
+form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 54px}
+form h2{grid-column:1/-1;font-family:'DM Serif Display';font-weight:400;font-size:36px}
+input,select,textarea{padding:13px;border:1px solid #c98d4b;border-radius:10px;background:#fff;font-family:'DM Sans';width:100%}
+textarea{grid-column:1/-1}button{grid-column:1/-1;background:#a35c14;color:#fff;border:0;border-radius:10px;padding:16px;font-weight:700;cursor:pointer}
+footer{border-top:2px dashed #c98d4b;padding:20px 0 34px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}form{grid-template-columns:1fr}.item{flex-direction:column}}
+</style></head><body><div class="wrap">
+<nav><b>Brown Loaf Bakery</b><span>268 Elgin St · <a href="tel:+16132363255">(613) 236-3255</a></span></nav>
+<div class="hero"><span class="tag">Bakery & Café · Elgin Street</span><h1>Baked this morning.<br>Gone by noon.</h1>
+<p>A husband-and-wife bakery on Elgin Street with a loyal Ottawa following — and, until now, a Facebook page as its entire website. Holiday pre-orders should not have to be a phone call.</p>
+<div class="stars">4.9 ★ from 59 reviews (Google Places) · 198 ratings on Restaurantji</div></div>
+<div class="list">
+<div class="item"><div><h3>Pecan Butter Tarts</h3><p>A Brown Loaf signature — the kind of thing regulars cross town for, and the first thing to sell out in December.</p></div><span>Pre-order</span></div>
+<div class="item"><div><h3>Nanaimo Bars</h3><p>A holiday-table staple. Box them up for the office, the family dinner, or yourself — we won't tell.</p></div><span>Pre-order</span></div>
+<div class="item"><div><h3>Decorated Cookies</h3><p>Seasonal decorated cookies for the Christmas window — order ahead instead of hoping the case is full.</p></div><span>Pre-order</span></div>
+<div class="item"><div><h3>Cakes, Made to Order</h3><p>“When I needed a cake, they offered to bake a Black Forest one right away.” — Tripadvisor review. Custom cakes start with the form below, not a walk-in guess.</p></div><span>Request</span></div>
+</div>
+<div class="grid">
+<div class="box dark"><h3>Christmas is coming</h3><p>The highest-demand baking weeks of the year start in about five weeks. A pre-order list with pickup dates turns phone chaos into a baking schedule the kitchen can actually plan.</p></div>
+<div class="box light"><h3>Find us on Elgin</h3><p>268 Elgin St, Ottawa, ON K2P 1M2. Follow daily bakes on Facebook at @brownloafelgin — and soon, order from right here.</p></div>
+</div>
+<form onsubmit="document.getElementById('bmsg').textContent='Request noted — this is a concept form, so nothing was sent. Please call (613) 236-3255 to pre-order today.';return false">
+<h2>Holiday pre-order request</h2>
+<input required placeholder="Your name"><input placeholder="Phone or email">
+<select><option>Pecan butter tarts</option><option>Nanaimo bars</option><option>Decorated cookies</option><option>Custom cake</option><option>Mixed holiday box</option></select>
+<input type="date" aria-label="Pickup date">
+<textarea rows="3" placeholder="Quantities and details"></textarea>
+<button>Send pre-order request (concept)</button><div id="bmsg" style="grid-column:1/-1"></div></form>
+<footer><span>268 Elgin St, Ottawa, ON K2P 1M2 · (613) 236-3255 · FB @brownloafelgin</span><span>Concept built by Jake Hersky (hersky.info)</span></footer>
+</div></body></html>
